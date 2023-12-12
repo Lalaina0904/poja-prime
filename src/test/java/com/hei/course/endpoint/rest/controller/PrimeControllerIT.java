@@ -11,6 +11,7 @@ import static org.junit.Assert.assertTrue;
 
 @RestController
 public class PrimeControllerIT {
+    // test code
 
     @Autowired
     private PrimeController controller;
