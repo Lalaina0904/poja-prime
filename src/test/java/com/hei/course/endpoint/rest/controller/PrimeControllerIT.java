@@ -11,7 +11,6 @@ import static org.junit.Assert.assertTrue;
 
 @RestController
 public class PrimeControllerIT {
-    // test code
 
     @Autowired
     private PrimeController controller;
@@ -20,9 +19,9 @@ public class PrimeControllerIT {
     public void testGeneratePrime() {
         BigInteger prime = controller.generatePrime();
 
-        assertTrue("The number is not probable prime", prime.isProbablePrime(100));
+        assertTrue("The number is not probable prime", prime.isProbablePrime(99));
 
-        assertEquals("The number length is not 100 bits", 100, prime.bitLength());
+        assertEquals("The number length is not 10000 bits", 10_000, prime.bitLength());
     }
 
 }
