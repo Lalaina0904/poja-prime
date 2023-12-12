@@ -16,9 +16,9 @@ public class PrimeControllerIT {
 
         BigInteger prime = controller.generatePrime();
 
-        assertTrue("The number is not probable prime", prime.isProbablePrime(100));
+        assertTrue("The number is not probable prime", prime.isProbablePrime(10000));
 
-        assertEquals("The number length is not 100 bits", 100, prime.bitLength());
+        assertEquals("The number length is not 100000 bits", 10000, prime.bitLength());
     }
 
 }
